@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Index Page
+    </title>
+    </head>
+    <body>
+    <form method="POST" action="../hi/">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button> Save </button>
+    </form>
+
+    </body>
+</html>
